@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main container">
+        <main>
+            <h1>ROCK PAPER SCISSOR GAME</h1>
+        </main>
+        <div>
+            <h2>Choose you weapon.</h2>
+            <div class="choice-img">
+                <img class="human-choice" src="images/question-mark-sign-svgrepo-com.svg" alt="player choice">
+                <img class="bot-choice" src="images/question-mark-sign-svgrepo-com.svg" alt="bot choice">
+            </div>
+            <h2><span class="round-left-check">5</span> round left.</h2>
+        </div>
+        <div class="choose">
+            <div class="choose-hide">
+                <button onclick="paper()">paper</button>
+                <button onclick="scissor()">scissor</button>
+                <button onclick="rock()">rock</button>
+            </div>
+            <div class="remove-hide hide">   
+                <button onclick="incrementTheI()">check</button>
+            </div>
+        </div>
+    </div>
+    <div class="hide game-over">
+        <div>
+            <h1>GAME OVER</h1>
+            <p class="game-over-p"></p>
+            <a href="http://127.0.0.1:5500/rock%20paper/index.html"><button type="reset">Restart</button></a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
